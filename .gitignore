@@ -2,6 +2,9 @@ ebin
 build
 dist
 *.beam
+deps
+plugins
+.erlang.mk
 test/.idea
 test/out
 test/tests/tests.iml

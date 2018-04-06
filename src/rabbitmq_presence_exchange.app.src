@@ -1,6 +1,6 @@
-{application, rabbit_presence_exchange,
+{application, rabbitmq_presence_exchange,
  [{description, "RabbitMQ Presence Exchange Plugin"},
-  {vsn, "%%VSN%%"},
+  {vsn, "3.5-1vbrick"},
   {modules, [presence_exchange_app, presence_exchange]},
   {registered, []},
   {mod, {presence_exchange_app, []}},

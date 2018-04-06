@@ -23,6 +23,7 @@
 -export([validate/1, validate_binding/2, create/2, delete/3,
          policy_changed/2,
          add_binding/3, remove_bindings/3, assert_args_equivalence/2]).
+-export([info/1, info/2]).
 
 encode_binding_delivery(DeliveryXName,
                         Action,
@@ -40,6 +41,9 @@ encode_binding_delivery(DeliveryXName,
 			    [{headers, Headers}], <<>>), %% message itself
 			  undefined %% message sequence number
                          ).
+
+info(_X) -> [].
+info(_X, _) -> [].
 
 description() ->
     [{name, ?EXCHANGE_TYPE_BIN},
